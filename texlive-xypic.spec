@@ -6,7 +6,7 @@
 # catalog-version 3.8.6
 Name:		texlive-xypic
 Version:	3.8.6
-Release:	1
+Release:	2
 Summary:	Flexible diagramming macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/xypic/xy
