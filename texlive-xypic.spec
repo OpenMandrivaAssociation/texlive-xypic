@@ -1,16 +1,16 @@
-# revision 23327
+# revision 26642
 # category Package
-# catalog-ctan /macros/generic/diagrams/xypic/xy
-# catalog-date 2011-05-28 00:39:58 +0200
-# catalog-license gpl
-# catalog-version 3.8.6
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-xypic
-Version:	3.8.6
-Release:	2
-Summary:	Flexible diagramming macros
+Version:	20120809
+Release:	1
+Summary:	TeXLive xypic package
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/xypic/xy
-License:	GPL
+URL:		http://tug.org/texlive
+License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xypic.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xypic.doc.tar.xz
 BuildArch:	noarch
@@ -19,9 +19,7 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-A package for typesetting a variety of graphs and diagrams with
-TeX. Xy-pic works with most formats (including LaTeX, AMS-
-LaTeX, AMS-TeX, and plain TeX).
+TeXLive xypic package.
 
 %post
     %{_sbindir}/texlive.post
@@ -33,7 +31,7 @@ LaTeX, AMS-TeX, and plain TeX).
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvips/xypic/xy386dict.pro
+%{_texmfdistdir}/dvips/xypic/xy388dict.pro
 %{_texmfdistdir}/fonts/afm/public/xypic/xyatip10.afm
 %{_texmfdistdir}/fonts/afm/public/xypic/xybsql10.afm
 %{_texmfdistdir}/fonts/afm/public/xypic/xybtip10.afm
@@ -245,7 +243,7 @@ LaTeX, AMS-TeX, and plain TeX).
 %doc %{_texmfdistdir}/doc/generic/xypic/support/dvitogif89a
 %doc %{_texmfdistdir}/doc/generic/xypic/support/install-tds
 %doc %{_texmfdistdir}/doc/generic/xypic/support/pnmrawtopcropwhite.c
-%doc %{_texmfdistdir}/doc/generic/xypic/xy386src.tar.gz
+%doc %{_texmfdistdir}/doc/generic/xypic/xy388src.tar.gz
 %doc %{_texmfdistdir}/doc/generic/xypic/xyguide.pdf
 %doc %{_texmfdistdir}/doc/generic/xypic/xypdf.pdf
 %doc %{_texmfdistdir}/doc/generic/xypic/xyrefer.pdf
