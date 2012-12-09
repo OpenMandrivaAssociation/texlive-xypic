@@ -258,3 +258,20 @@ TeXLive xypic package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120809-1
++ Revision: 813190
+- Update to latest release.
+
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.8.6-2
++ Revision: 757726
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.8.6-1
++ Revision: 719956
+- texlive-xypic
+- texlive-xypic
+- texlive-xypic
+
