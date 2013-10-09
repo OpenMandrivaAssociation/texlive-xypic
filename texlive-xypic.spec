@@ -1,16 +1,17 @@
-# revision 26642
+# revision 31859
 # category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
+# catalog-ctan /macros/generic/diagrams/xypic
+# catalog-date 2013-10-06 19:55:25 +0200
+# catalog-license gpl
+# catalog-version 3.8.9
 Name:		texlive-xypic
-Version:	20120809
+Epoch:		1
+Version:	3.8.9
 Release:	1
-Summary:	TeXLive xypic package
+Summary:	Flexible diagramming macros
 Group:		Publishing
-URL:		http://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
+URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/xypic
+License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xypic.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xypic.doc.tar.xz
 BuildArch:	noarch
@@ -19,7 +20,11 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-TeXLive xypic package.
+A package for typesetting a variety of graphs and diagrams with
+TeX. Xy-pic works with most formats (including LaTeX, AMS-
+LaTeX, AMS-TeX, and plain TeX). The distribution includes
+Michael Barr's diag package, which was previously distributed
+stand-alone.
 
 %post
     %{_sbindir}/texlive.post
@@ -31,7 +36,7 @@ TeXLive xypic package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvips/xypic/xy388dict.pro
+%{_texmfdistdir}/dvips/xypic/xy389dict.pro
 %{_texmfdistdir}/fonts/afm/public/xypic/xyatip10.afm
 %{_texmfdistdir}/fonts/afm/public/xypic/xybsql10.afm
 %{_texmfdistdir}/fonts/afm/public/xypic/xybtip10.afm
@@ -176,6 +181,7 @@ TeXLive xypic package.
 %{_texmfdistdir}/tex/generic/xypic/xyall.tex
 %{_texmfdistdir}/tex/generic/xypic/xyarc.tex
 %{_texmfdistdir}/tex/generic/xypic/xyarrow.tex
+%{_texmfdistdir}/tex/generic/xypic/xybarr.tex
 %{_texmfdistdir}/tex/generic/xypic/xycmactex.tex
 %{_texmfdistdir}/tex/generic/xypic/xycmtip.tex
 %{_texmfdistdir}/tex/generic/xypic/xycolor.tex
@@ -240,10 +246,11 @@ TeXLive xypic package.
 %doc %{_texmfdistdir}/doc/generic/xypic/VERSIONS
 %doc %{_texmfdistdir}/doc/generic/xypic/Xy-logo.png
 %doc %{_texmfdistdir}/doc/generic/xypic/Xy-pic.html
+%doc %{_texmfdistdir}/doc/generic/xypic/barrdoc.pdf
 %doc %{_texmfdistdir}/doc/generic/xypic/support/dvitogif89a
 %doc %{_texmfdistdir}/doc/generic/xypic/support/install-tds
 %doc %{_texmfdistdir}/doc/generic/xypic/support/pnmrawtopcropwhite.c
-%doc %{_texmfdistdir}/doc/generic/xypic/xy388src.tar.gz
+%doc %{_texmfdistdir}/doc/generic/xypic/xy389src.tar.gz
 %doc %{_texmfdistdir}/doc/generic/xypic/xyguide.pdf
 %doc %{_texmfdistdir}/doc/generic/xypic/xypdf.pdf
 %doc %{_texmfdistdir}/doc/generic/xypic/xyrefer.pdf
@@ -258,20 +265,3 @@ TeXLive xypic package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120809-1
-+ Revision: 813190
-- Update to latest release.
-
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.8.6-2
-+ Revision: 757726
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.8.6-1
-+ Revision: 719956
-- texlive-xypic
-- texlive-xypic
-- texlive-xypic
-
