@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-xypic
 Version:	20120809
-Release:	1
+Release:	2
 Summary:	TeXLive xypic package
 Group:		Publishing
 URL:		http://tug.org/texlive
