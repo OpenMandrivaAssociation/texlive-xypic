@@ -7,7 +7,7 @@
 Name:		texlive-xypic
 Epoch:		1
 Version:	3.8.9
-Release:	8
+Release:	9
 Summary:	Flexible diagramming macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/xypic
