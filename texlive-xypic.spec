@@ -1,19 +1,13 @@
-# revision 31859
-# category Package
-# catalog-ctan /macros/generic/diagrams/xypic
-# catalog-date 2013-10-06 19:55:25 +0200
-# catalog-license gpl
-# catalog-version 3.8.9
 Name:		texlive-xypic
 Epoch:		1
-Version:	3.8.9
-Release:	10
+Version:	61719
+Release:	1
 Summary:	Flexible diagramming macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/xypic
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xypic.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xypic.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xypic.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xypic.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ Michael Barr's diag package, which was previously distributed
 stand-alone.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -258,7 +252,7 @@ stand-alone.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
